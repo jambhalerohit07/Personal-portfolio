@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/fcea945cdd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo" />
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Rohit Jambhale</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------ About ----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/u.jpg" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                    Recently passed my Bachelor of Engineering. Having strong fundamental skills in programming languages like C, C++, Java,
+                    and JavaScript. Also familiar with database like MySQL.
+                    Apart from that completed two months of internship in Anvira Solutions, Mumbai.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            Skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br />Web App Development</li>
+                            <li>
+                                <span>App Development</span><br />Mobile App Development
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2023</span><br />B.E in Computer Engineering from
+                                DYPCOEI, Pune
+                            </li>
+                            <li>
+                                <span>2020</span><br />Diploma in Computer Engineering from
+                                IOPE, Lonere
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------Project --------------->
+    <div id="project">
+        <div class="container">
+            <h1 class="subtitle">Projects</h1>
+            <div class="project-list">
+                <div>
+                    <h2>Multipurpose Security Application</h2>
+                    <p>
+                        Basically this application is for security purpose. It will detect
+                        suspisous activity.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>Text Utils Application</h2>
+                    <p>
+                        Text Utility is a Free Online Word Counter and character counter
+                        tool which can manipulate your text the way you want.
+                    </p>
+                    <a href="https://github.com/jambhalerohit07/textUtils-react">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------  Contact -------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p>
+                        <i class="fa-solid fa-envelope"></i> jambhalerohit07@gmail.com
+                    </p>
+                    <p><i class="fa-solid fa-phone-volume"></i> 9922630699</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/rohitjambhale"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/jambhalerohit07"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="Images/Updated Resume.pdf" download>
+                        <button type="button">Download Resume</button>
+                    </a>
+                   <!--<a href="Images/Updated Resume.pdf" download class="btn">Download Resume</a>--> 
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required
+                            style="background-color: aliceblue;" />
+                        <input type="email" name="Email" placeholder="Your Email" required
+                            style="background-color: aliceblue;" />
+                        <textarea name="Message" rows="6" placeholder="Your Message"
+                            style="background-color: aliceblue;"></textarea>
+                        <button type="submit" class="btn btn1">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p></p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL =
+            "https://script.google.com/macros/s/AKfycbx_lVBfQ4mtv6UNgXVlILr4PV4VcU9qNL-BRdxTNjepCP78jp_XAQnwHa1juuSBNj8Efw/exec";
+        const form = document.forms["submit-to-google-sheet"];
+        const msg = document.getElementById("msg");
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            fetch(scriptURL, { method: "POST", body: new FormData(form) })
+                .then((response) => {
+                    msg.innerHTML = "Message sent successflly!";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 2000);
+                    form.reset();
+                })
+                .catch((error) => console.error("Error!", error.message));
+        });
+    </script>
+</body>
+
+</html>
