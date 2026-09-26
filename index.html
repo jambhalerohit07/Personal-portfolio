@@ -1,241 +1,313 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>PortFolio</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/fcea945cdd.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://kit.fontawesome.com/fcea945cdd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="Images/logo.png" class="logo" />
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#project">Project</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Software Engineer</p>
-                <h1>Hi, I'm <span>Rohit Jambhale</span></h1>
-            </div>
+      <div class="container">
+        <nav>
+          <img src="Images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Engineer</p>
+          <h1>Hi, I'm <span>Rohit Jambhale</span></h1>
         </div>
+      </div>
     </div>
 
     <!-- ------------ About ----------- -->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="Images/u.jpg" />
-                </div>
-                <div class="about-col-2">
-                    <h1 class="subtitle">About Me</h1>
-                    <p>
-                        Software Engineer with 1.5 years of hands-on experience in designing, developing, and deploying web-based and enterprise
-                        applications. Proficient in core programming languages including Java, C#, Python, JavaScript, ReactJS, and SQL. Strong
-                        problem-solving skills with a passion for building scalable and efficient software solutions. Experienced in
-                        collaborating with cross-functional teams to deliver high-quality projects within deadlines. Eager to contribute to a
-                        tech-driven organization and take on new challenges that foster innovation and continuous learning.
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">
-                            Skills
-                        </p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('workExperience')">Work Experience</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Web Development</span><br />Web App Development <ul style="list-style-type: disc; padding-left: 20px;">
-                                <li>Html</li>
-                                <li>css</li>
-                                <li>JavaScript</li>
-                                <li>ReactJS.</li>
-                                <li>Tailwind.</li>
-                                <li>Redux.</li>                                
-                            </ul>
-                            </li>
-                            <li>
-                                <span>App Development</span><br />Mobile App Development<ul style="list-style-type: disc; padding-left: 20px;">
-                                    <li>Html</li>
-                                    <li>css</li>
-                                    <li>JavaScript</li>
-                                    <li>React native.</li>
-                                    <li>Redux persist.</li>
-                                    <li>Redux.</li>
-                                    </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li>
-                                <span>2023</span><br />B.E in Computer Engineering from
-                                DYPCOEI, Pune
-                                
-                            </li>
-                            <li>
-                                <span>2020</span><br />Diploma in Computer Engineering from
-                                IOPE, Lonere
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="workExperience">
-                        <ul>
-                            <li>
-                                <span>02-2024 to 09-2024</span><br />
-                                <strong>Commtex Solution, Mumbai</strong>
-                                <ul style="list-style-type: disc; padding-left: 20px;">
-                                    <li>Gather requirements from senior developers and ensure a clear understanding of the desired
-                                        functionality and design.</li>
-                                    <li>Write clean, maintainable, and efficient code using HTML, CSS, and JavaScript.</li>
-                                    <li>Worked on an ERP system, addressing and resolving bugs identified by the testing team.</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span>09-2024 to present</span><br />
-                                <strong>Inttech Solutions, Mumbai</strong>
-                                <ul style="list-style-type: disc; padding-left: 20px;">
-                                    <li>Built and maintained secure web applications that handle encrypted requests and response data. Built robust
-                                    front-end components using React, Redux, Redux-Thunk, Redux-Persist, and integrating Redux for state
-                                    management and Redux Thunk for asynchronous actions.
-                                        </li>
-                                    <li>Designed and executed responsive UIs with Material-UI and Tailwind CSS. Managed user sessions and
-                                    role-based access control, ensuring that different users roles received tailored UI functionalities. Querying data
-                                    using SQL, REST Full API calling using Axios and Fetch.
-                                        </li>
-                                    <li>Worked on the backend using .NET Core Web API to develop RESTful APIs for seamless communication
-                                    with client applications. Handled secure requests by encrypting and decrypting data responses. Ensured high
-                                    performance and reliability throughoptimized API design and error handling.</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/u.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              I’m a passionate and results-driven Software Developer with 2+
+              years of hands-on experience in designing, developing, and
+              maintaining scalable web and mobile applications. Proficient in
+              modern technologies like JavaScript, React, Node.js, and RESTful
+              APIs, I focus on building clean, efficient, and user-centric
+              solutions. I thrive in collaborative environments, enjoy solving
+              complex problems, and continuously seek to learn and adapt in the
+              ever-evolving tech landscape.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('workExperience')">
+                Work Experience
+              </p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />Web App Development
+                  <ul style="list-style-type: disc; padding-left: 20px">
+                    <li>Html</li>
+                    <li>css</li>
+                    <li>JavaScript</li>
+                    <li>ReactJS.</li>
+                    <li>Tailwind.</li>
+                    <li>Redux.</li>
+                  </ul>
+                </li>
+                <li>
+                  <span>App Development</span><br />Mobile App Development
+                  <ul style="list-style-type: disc; padding-left: 20px">
+                    <li>Html</li>
+                    <li>css</li>
+                    <li>JavaScript</li>
+                    <li>React native.</li>
+                    <li>Redux persist.</li>
+                    <li>Redux.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023</span><br />B.E in Computer Engineering from
+                  DYPCOEI, Pune
+                </li>
+                <li>
+                  <span>2020</span><br />Diploma in Computer Engineering from
+                  IOPE, Lonere
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="workExperience">
+              <ul>
+                <li>
+                  <span>02-2024 to 09-2024</span><br />
+                  <strong>Commtex Solution, Mumbai</strong>
+                  <ul style="list-style-type: disc; padding-left: 20px">
+                    <li>
+                      Gather requirements from senior developers and ensure a
+                      clear understanding of the desired functionality and
+                      design.
+                    </li>
+                    <li>
+                      Write clean, maintainable, and efficient code using HTML,
+                      CSS, and JavaScript.
+                    </li>
+                    <li>
+                      Worked on an ERP system, addressing and resolving bugs
+                      identified by the testing team.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span>09-2024 to 03-2026</span><br />
+                  <strong>Inttech Solutions, Mumbai</strong>
+                  <ul style="list-style-type: disc; padding-left: 20px">
+                    <li>
+                      Built and maintained secure web applications that handle
+                      encrypted requests and response data. Built robust
+                      front-end components using React, Redux, Redux-Thunk,
+                      Redux-Persist, and integrating Redux for state management
+                      and Redux Thunk for asynchronous actions.
+                    </li>
+                    <li>
+                      Designed and executed responsive UIs with Material-UI and
+                      Tailwind CSS. Managed user sessions and role-based access
+                      control, ensuring that different users roles received
+                      tailored UI functionalities. Querying data using SQL, REST
+                      Full API calling using Axios and Fetch.
+                    </li>
+                    <li>
+                      Worked on the backend using .NET Core Web API to develop
+                      RESTful APIs for seamless communication with client
+                      applications. Handled secure requests by encrypting and
+                      decrypting data responses. Ensured high performance and
+                      reliability throughoptimized API design and error
+                      handling.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span>03-2026 to present</span><br />
+                  <strong>Fyntune Solutions Pvt. Ltd., Navi Mumbai</strong>
+                  <ul style="list-style-type: disc; padding-left: 20px">
+                    <li>
+                      Develop scalable and reusable web applications using
+                      React.js, JavaScript, and modern frontend technologies.
+                      Build reusable components and manage application state
+                      using Redux/Redux Toolkit and Context API.
+                    </li>
+                    <li>
+                      Integrate REST APIs and implement authentication,
+                      authorization, and error handling. Optimize application
+                      performance using lazy loading, code splitting,
+                      memoization, and efficient rendering.
+                    </li>
+                    <li>
+                      Develop responsive UI using HTML, CSS, Tailwind CSS, and
+                      Material UI. Collaborate with backend, QA, and product
+                      teams to deliver high-quality features. Perform code
+                      reviews, troubleshoot production issues, and follow clean
+                      coding best practices.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!------------------Project --------------->
     <div id="project">
-        <div class="container">
-            <h1 class="subtitle">Projects</h1>
-            <div class="project-list">
-                <div>
-                    <h2>Multipurpose Security Application</h2>
-                    <p>
-                        Basically this application is for security purpose. It will detect
-                        suspisous activity.
-                    </p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <h2>Text Utils Application</h2>
-                    <p>
-                        Text Utility is a Free Online Word Counter and character counter
-                        tool which can manipulate your text the way you want.
-                    </p>
-                    <a href="https://github.com/jambhalerohit07/textUtils-react">Learn More</a>
-                </div>
-            </div>
+      <div class="container">
+        <h1 class="subtitle">Projects</h1>
+        <div class="project-list">
+          <div>
+            <h2>Multipurpose Security Application</h2>
+            <p>
+              Basically this application is for security purpose. It will detect
+              suspisous activity.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <h2>Text Utils Application</h2>
+            <p>
+              Text Utility is a Free Online Word Counter and character counter
+              tool which can manipulate your text the way you want.
+            </p>
+            <a href="https://github.com/jambhalerohit07/textUtils-react"
+              >Learn More</a
+            >
+          </div>
         </div>
+      </div>
     </div>
     <!--------------  Contact -------------------->
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact me</h1>
-                    <p>
-                        <i class="fa-solid fa-envelope"></i> jambhalerohit07@gmail.com
-                    </p>
-                    <p><i class="fa-solid fa-phone-volume"></i> 9922630699</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/rohitjambhale"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/jambhalerohit07"><i class="fa-brands fa-github"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                    <a href="Images/Resume.pdf" download>
-                        <button type="button">Download Resume</button>
-                    </a>
-                   <!--<a href="Images/Updated Resume.pdf" download class="btn">Download Resume</a>--> 
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required
-                            style="background-color: aliceblue;" />
-                        <input type="email" name="Email" placeholder="Your Email" required
-                            style="background-color: aliceblue;" />
-                        <textarea name="Message" rows="6" placeholder="Your Message"
-                            style="background-color: aliceblue;"></textarea>
-                        <button type="submit" class="btn btn1">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p>
+              <i class="fa-solid fa-envelope"></i> jambhalerohit07@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone-volume"></i> 9922630699</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/rohitjambhale"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/jambhalerohit07"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
             </div>
+            <a href="Images/Resume.pdf" download>
+              <button type="button">Download Resume</button>
+            </a>
+            <!--<a href="Images/Updated Resume.pdf" download class="btn">Download Resume</a>-->
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Name"
+                required
+                style="background-color: aliceblue"
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+                style="background-color: aliceblue"
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+                style="background-color: aliceblue"
+              ></textarea>
+              <button type="submit" class="btn btn1">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
-        <div class="copyright">
-            <p></p>
-        </div>
+      </div>
+      <div class="copyright">
+        <p></p>
+      </div>
     </div>
 
     <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
     </script>
     <script>
-        var sidemenu = document.getElementById("sidemenu");
+      var sidemenu = document.getElementById("sidemenu");
 
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
     </script>
 
     <script>
-        const scriptURL =
-            "https://script.google.com/macros/s/AKfycbx_lVBfQ4mtv6UNgXVlILr4PV4VcU9qNL-BRdxTNjepCP78jp_XAQnwHa1juuSBNj8Efw/exec";
-        const form = document.forms["submit-to-google-sheet"];
-        const msg = document.getElementById("msg");
-        form.addEventListener("submit", (e) => {
-            e.preventDefault();
-            fetch(scriptURL, { method: "POST", body: new FormData(form) })
-                .then((response) => {
-                    msg.innerHTML = "Message sent successflly!";
-                    setTimeout(function () {
-                        msg.innerHTML = "";
-                    }, 2000);
-                    form.reset();
-                })
-                .catch((error) => console.error("Error!", error.message));
-        });
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbx_lVBfQ4mtv6UNgXVlILr4PV4VcU9qNL-BRdxTNjepCP78jp_XAQnwHa1juuSBNj8Efw/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successflly!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 2000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
-</body>
-
+  </body>
 </html>
